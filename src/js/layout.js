@@ -6,7 +6,6 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Character } from "./views/character";
 import { Planet } from "./views/planet";
-
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
