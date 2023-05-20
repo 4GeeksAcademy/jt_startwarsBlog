@@ -8,9 +8,7 @@ export const Navbar = () => {
 		<nav className="navbar navbar-light bg-light mb-3">
 			<Link to="/">
 			<div className="container mx-5">
-    			<a className="navbar-brand" href="#">
      				 <img src="https://www.freepnglogos.com/uploads/star-wars-logo-png-8.png" alt="StarWars" width="100"/>
-    			</a>
   			</div>
 			</Link>
 			<div className="dropdown">
@@ -20,7 +18,7 @@ export const Navbar = () => {
 				<ul className="dropdown-menu">
 					<li><a className="dropdown-item" href="#">Action<i className="fas fa-times"></i></a></li>
 					<li><a className="dropdown-item" href="#">Another<i className="fas fa-times"></i></a></li>
-					<li><a className="dropdown-item" href="#">Something<i className="fas fa-times"></i></a></li>
+					<li><a className="dropdown-item" href="#">Something <i className="fas fa-times"></i></a></li>
 				</ul>
 			</div>
 		</nav>

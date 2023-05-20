@@ -1,3 +1,7 @@
 /* 
     General Styles
 */
+
+.card {
+    width: 18rem;
+}
