@@ -48,7 +48,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				.then(response => response.json())
 				.then((response)=> {
 					console.log(response.result.properties);
-					setStore({ character: response.result.properties });
+					setStore({ planet: response.result.properties });
 				});
 			},
 			
