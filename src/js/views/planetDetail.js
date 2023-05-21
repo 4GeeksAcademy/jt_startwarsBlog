@@ -11,7 +11,7 @@ export const PlanetDetail = () => {
 
 	useEffect(()=> {
 		actions.getPlanet(params.id)
-	})
+	}, [])
 
 	return (
 		<div className="col-12">
