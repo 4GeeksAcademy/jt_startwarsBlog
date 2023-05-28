@@ -5,7 +5,7 @@ import "../../styles/index.css";
 
 
 export const VehiclesCards = () => {
-	const {store} = useContext(Context)
+	const {store, actions} = useContext(Context)
 	return (
 		<>
 		<div className="container-fluid">
@@ -18,7 +18,7 @@ export const VehiclesCards = () => {
 							<div className="card-body">
 						 		<h4 className="card-title mb-4">{vehicles.name}</h4>
 								<Link to={`/vehicle/${vehicles.uid}`} className="btn btn-dark mx-2">More info</Link>
-						  		<button className="btn btn-danger mx-2"><i className="fas fa-heart"></i></button>
+						  		<button className="btn btn-danger mx-2" onClick={() => actions.setFavorite(vehicles.name)} disabled={store.favorites.includes(vehicles.name)}><i className="fas fa-heart"></i></button>
 					  		</div>
 			 		</div>
 					)}

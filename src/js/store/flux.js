@@ -74,19 +74,29 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 		
 			
-			/*
-			setFavorite: (character) => {
+			setFavorite: (item) => {
 				const store = getStore()
-				console.log([...store.favorite, character])
-				setStore({ favorite: [...store.favorite, character]})
+				
+				const isAlreadyFavorite = store.favorites.includes(item);
+
+  				if (!isAlreadyFavorite) {
+				const updatedFavorites = [...store.favorites, item];
+				setStore({ favorites: updatedFavorites})
+				}
 			},
 
-			*/
+			removeFavorite: (index) => {
+				const store = getStore();
+				const updatedFavorites = store.favorites.filter((item, currentIndex) => currentIndex !== index);
+  				setStore({ favorites: updatedFavorites });
+			},
+
+			  }
 				//reset the global store
 			
 			}
 		}
-	};
+	
 
 
 export default getState;
