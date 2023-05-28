@@ -22,7 +22,7 @@ export const CharacterDetail = () => {
 					<div className="card mx-auto">
 						<div className="row g-0">
 							<div className="col-md-4">
-								<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/harry-potter-hogwarts-6401ff12964ad.jpg?crop=0.624xw:0.946xh;0.117xw,0.0543xh&resize=640:*" className="img-fluid rounded-start" alt="..."/>
+								<img src="https://starwars-visualguide.com/assets/img/characters/1.jpg" className="img-fluid rounded-start" alt="..."/>
 							</div>
 							<div className="col-md-8">
 								<div className="card-body">

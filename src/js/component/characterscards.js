@@ -14,7 +14,7 @@ export const CharactersCards = () => {
 			return (
 					<div className="col-12 col-md-4" key= {index}>
 					<div className="card m-4">
-						<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/harry-potter-hogwarts-6401ff12964ad.jpg?crop=0.624xw:0.946xh;0.117xw,0.0543xh&resize=640:*" className="card-img-top" alt="..."/>
+						<img src={`https://starwars-visualguide.com/assets/img/characters/${index+1}.jpg`} className="card-img-top" alt="..."/>
 							<div className="card-body">
 						 		 <h4 className="card-title mb-4">{characters.name}</h4>
 								  <Link to={`/character/${characters.uid}`} className="btn btn-dark mx-2">More info</Link>
