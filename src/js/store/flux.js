@@ -62,6 +62,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					setStore({ planet: response.result.properties });
 				});
 			},
+
+		
 			
 			/*
 			setFavorite: (character) => {

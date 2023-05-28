@@ -19,28 +19,42 @@ export const CharacterDetail = () => {
 				store.character ? 
 				<>
 				
-					<div className="myCard card mx-auto">
+					<div className="myCard card text-white bg-dark mb-3 mx-auto">
 						<div className="row g-0">
-							<div className="col-md-4">
-								<img src="https://starwars-visualguide.com/assets/img/characters/1.jpg" className="img-fluid rounded-start" alt="..."/>
+							<div className="col-md-4 p-3">
+								<img src={`https://starwars-visualguide.com/assets/img/characters/${params.id}.jpg`} className="detailed-img img-fluid rounded" alt="..."/>
 							</div>
 							<div className="col-md-8">
-								<div className="card-body">
-									<h3 className="card-title">{store.character.name}</h3>
-									<p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<div className="card-body p-3">
+									<h2 className="card-title ">{store.character.name}</h2>
+									<p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam ipsum, rhoncus vel ligula et, eleifend malesuada purus. Duis nec nunc tempor, sollicitudin metus id, dignissim sapien. Pellentesque vitae vehicula dui, nec gravida dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur orci orci, convallis quis odio in, efficitur posuere lacus.</p>
 								</div>
 							</div>
 						</div>
-						<div className="row">
+						<div className="row mx-2 pt-2 border-top">
 							<div className="col-2">
-								<h1>Hola</h1>
+								<h6>BIRTH</h6>
+								<p>{store.character.birth_year}</p>
 							</div>
 							<div className="col-2">
-								<h1>Hola</h1>
-								<p>esto es un p</p>
+								<h6>GENDER</h6>
+								<p>{store.character.gender}</p>
 							</div>
 							<div className="col-2">
-								<h1>Hola</h1>
+								<h6>HAIR</h6>
+								<p>{store.character.hair_color}</p>
+							</div>
+							<div className="col-2">
+								<h6>SKIN</h6>
+								<p>{store.character.skin_color}</p>
+							</div>
+							<div className="col-2">
+								<h6>HEIGHT</h6>
+								<p>{store.character.height}</p>
+							</div>
+							<div className="col-2">
+								<h6>FILMS</h6>
+								<p>{store.character.homeworld}</p>
 							</div>
 						</div>
 					</div>
