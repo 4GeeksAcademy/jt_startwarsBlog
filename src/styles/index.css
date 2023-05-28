@@ -2,6 +2,14 @@
     General Styles
 */
 
-.card {
-    width: 18rem;
-}
+
+.container-fluid {
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    white-space: nowrap; /* Evita que las cards se envuelvan en varias líneas */
+  }
+  
+  .scrollmenu {
+    display: flex; /* Alinea las cards en una línea horizontal */
+  }
+  
+

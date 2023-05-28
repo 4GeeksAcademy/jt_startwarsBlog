@@ -19,7 +19,7 @@ export const CharacterDetail = () => {
 				store.character ? 
 				<>
 				
-					<div className="card mx-auto">
+					<div className="myCard card mx-auto">
 						<div className="row g-0">
 							<div className="col-md-4">
 								<img src="https://starwars-visualguide.com/assets/img/characters/1.jpg" className="img-fluid rounded-start" alt="..."/>
