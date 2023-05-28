@@ -32,27 +32,27 @@ export const CharacterDetail = () => {
 							</div>
 						</div>
 						<div className="row mx-2 pt-2 border-top">
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>BIRTH</h6>
 								<p>{store.character.birth_year}</p>
 							</div>
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>GENDER</h6>
 								<p>{store.character.gender}</p>
 							</div>
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>HAIR</h6>
 								<p>{store.character.hair_color}</p>
 							</div>
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>SKIN</h6>
 								<p>{store.character.skin_color}</p>
 							</div>
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>HEIGHT</h6>
 								<p>{store.character.height}</p>
 							</div>
-							<div className="col-2">
+							<div className="col-md-12 col-lg-2">
 								<h6>FILMS</h6>
 								<p>{store.character.homeworld}</p>
 							</div>

@@ -1,5 +1,6 @@
 .myCard {
-    width: 40%;
+    width: 50%;
+    height: 100%;
     box-shadow: 11px 13px 8px -7px grey, inset 6px 7px 10px -7px grey,inset -4px -4px 9px -4px grey;
     border-radius: 5px;
     border: none;

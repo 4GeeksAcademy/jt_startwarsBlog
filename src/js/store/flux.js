@@ -7,6 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			favorites: [],
 			character: [],
 			planet: [],
+			vehicle: [],
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -63,6 +64,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 			},
 
+			getVehicle: (uid) => {
+				fetch(`https://www.swapi.tech/api/vehicles/${uid}`)
+				.then(response => response.json())
+				.then((response)=> {
+					console.log(response.result.properties);
+					setStore({ vehicle: response.result.properties });
+				});
+			},
 		
 			
 			/*
